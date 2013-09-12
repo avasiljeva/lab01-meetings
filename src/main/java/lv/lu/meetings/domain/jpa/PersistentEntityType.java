@@ -9,13 +9,12 @@ import lv.lu.meetings.domain.jpa.meeting.SportEvent;
 import lv.lu.meetings.domain.jpa.venue.Category;
 import lv.lu.meetings.domain.jpa.venue.Venue;
 import lv.lu.meetings.impl.CommonJpaDAOImpl;
-import lv.lu.meetings.impl.CommonJpaDAOImplTest;
 
 /**
  * This is a registry of persistent (in scope SQL database) objects in a system.<br>
  * It is used in:
  * <li>{@link CommonJpaDAOImpl#cleanupDB()} to delete everything from DB</li>
- * <li>{@link CommonJpaDAOImplTest} to create instances of persistent objects</li>
+ * <li>CommonJpaDAOImplTest to create instances of persistent objects</li>
  */
 public enum PersistentEntityType
 {
