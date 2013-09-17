@@ -63,11 +63,11 @@ public class Invite implements PersistentEntity  {
 		this.created = created;
 	}
 
-	public InviteStatus isProcessed() {
+	public InviteStatus getInviteStatus() {
 		return status;
 	}
 
-	public void setProcessed(InviteStatus status) {
+	public void setInviteStatus(InviteStatus status) {
 		this.status = status;
 	}
 }
