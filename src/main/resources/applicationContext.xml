@@ -27,12 +27,15 @@
 	
 	<!-- Venues data importing -->
 	<bean id="venuesProcessor" class="lv.lu.meetings.impl.venues.VenueDataImportProcessor">
-		<property name="cleanDatabase" value="true"/>		
+		<property name="cleanDatabase" value="true"/>
+		<!-- Max number of venues to retrieve in one request ('limit' parameter for Foursquare API request) -->
 		<property name="count" value="10"/>
 		<property name="request">
 			<map>
 				<entry>
+					<!-- 'near' parameter for Foursquare API request -->
 					<key><value>Riga, LV</value></key>
+					<!-- list of categories ('section' parameter for Foursquare API request) for retrieving venues -->
 					<list>
 						<value>food</value>
 						<value>coffee</value>
